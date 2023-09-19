@@ -1,0 +1,38 @@
+body {
+    background-color: #FFFFFF;
+}
+
+button {
+    height: 100px;
+    width: 200px;
+    display: flex;
+    color: #FFFFFF;
+    padding: 10px;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+}
+
+#button {
+    background-color: rgb(27, 88, 27);
+    height: 100px;
+    width: 200px;
+    display: flex;
+    color: #FFFFFF;
+    padding: 10px;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+}
+
+#redirect {
+    background-color: rgb(22, 77, 148);
+    height: 100px;
+    width: 200px;
+    display: flex;
+    color: #FFFFFF;
+    padding: 10px;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+}
