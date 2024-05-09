@@ -1,13 +1,13 @@
 .sidebar {
     height: 100%;
-    width: 100px;
+    width: 130px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     background-color: #111;
     overflow-x: hidden;
-    padding-top: 16px;
+    
 }
 
 .sidebar a {
@@ -16,12 +16,8 @@
     font-size: 20px;
     color: #818181;
     display: block;
+    text-align: left; /* Center align text */
 }
-
-.sidebar a:hover {
-    color: #f1f1f1;
-}
-
 body {
     background: linear-gradient(0deg, rgb(75, 5, 5) 0%, rgb(31, 4, 66) 100%);
     background-attachment: fixed;
@@ -52,7 +48,7 @@ img {
     color: white;
     border: 2px solid #111111;
     border-radius: 50px;
-    width: 40%;
+    width: 25%;
     padding: 16px 32px;
     text-align: center;
     text-decoration: none;
@@ -60,9 +56,36 @@ img {
     font-size: 16px;
     margin: 4px 2px;
     transition-duration: 0.5s;
+    
 }
 
 .button:hover {
     background-color: transparent;
-    border: 1px solid #111111;
+}
+
+@media screen and (max-width: 600px) {
+    .button {
+        width: 75%;
+
+        
+    }
+    .sidebar {
+        width: 100%; /* Full width */
+        position: relative; /* Normal flow under GIF */
+        background-color: #33333300; 
+        transition-duration: 0.5s;
+        
+    }
+    .sidebar a {
+        background-color: #111; /* Button-like appearance */
+        color: white;
+        padding: 12px; /* Bigger, easier to tap */
+        margin: 10px ; /* Spacing between buttons */
+        border-radius: 4px; /* Rounded corners */
+        text-align: center;
+    }
+    .sidebar a:hover {
+        background-color: transparent;
+    }
+    
 }
